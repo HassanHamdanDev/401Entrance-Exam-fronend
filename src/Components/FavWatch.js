@@ -38,7 +38,7 @@ class FavWatch extends Component {
         });
         this.forceUpdate();
     }
-    handleUpdateFav =  (watchId, title, image_url, description, toUSD) => {
+    handleUpdateFav = (watchId, title, image_url, description, toUSD) => {
         this.setState({
             watchId: watchId,
             title: title,
@@ -89,7 +89,7 @@ class FavWatch extends Component {
         return (
             <>
                 <UpdateModel
-                    isOpen={this.isOpen}
+                    isOpen={this.state.isOpen}
                     handleUpdateSubmit={this.handleUpdateSubmit}
                     handleToUSD={this.handleToUSD}
                     handleTitle={this.handleTitle}
